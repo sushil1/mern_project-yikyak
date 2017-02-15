@@ -1,0 +1,11 @@
+extends layout
+block content
+  form(action="/api/zone" name="add-zone", method="post")
+    div.input
+      span.label Name
+      input(type="text", name="name", placeholder="Name")
+    div.input
+      span.label ZipCode
+      input(type="text", name="zipCodes", placeholder="Zip Codes")
+    div.actions
+      input(type="submit", value="create Zone")

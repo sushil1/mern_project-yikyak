@@ -1,0 +1,11 @@
+extends layout
+block content
+  form(action="/api/comment" name="add-comment", method="post")
+    div.input
+      span.label Username
+      input(type="text", name="username", placeholder="userame@domain.com")
+    div.input
+      span.label Comment
+      input(type="text", name="body", placeholder="comment here....")
+    div.actions
+      input(type="submit", value="create comment")
